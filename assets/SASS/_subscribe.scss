@@ -1,0 +1,63 @@
+@import "./variables";
+#subscribe{
+    border-bottom: 1px solid #4B4136;
+    padding-bottom: 44px;
+    .subscribe_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h4{
+        width: 517px;
+        padding: 125px 0 10px;
+        @media (max-width:530px) {
+            width: 100%;
+        }
+    }
+    form{
+        padding: 82px 0 31px;
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        @media (max-width:550px) {
+            width: 95%;
+        }
+        input{
+            padding: 15px;
+            font-size: 16px;
+            color: $mainTextColor;
+            background-color: transparent;
+            border: 1px solid #4B4136;
+            outline: none;
+        }
+        button{
+            padding: 15px;
+            font-size: 18px;
+            background-color: $TextColor;
+            cursor: pointer;
+        }
+    }
+    .subscribe_logo{
+        display: flex;
+        gap: 10px;
+        padding-top: 16px;
+        @media (max-width:340px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    a{
+        padding: 19px;
+        border: 1px solid #4B4136;
+        color: $mainTextColor;
+        &:hover{
+            background-color: $mainTextColor;
+            color: rgb(19, 19, 93);
+            transition: all .6s;
+        }
+    }
+    p{
+        width: 80%;
+    }
+}
